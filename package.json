@@ -1,0 +1,22 @@
+{
+  "name": "heather-api",
+  "version": "1.0.0",
+  "description": "heather's amazin api",
+  "main": "build/index.js",
+  "author": "sarahkittyy <sarahohlin1@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "build": "make",
+    "run": "make run"
+  },
+  "dependencies": {
+    "@types/app-root-path": "^1.2.4",
+    "@types/express": "^4.17.0",
+    "@types/node": "^12.0.12",
+    "@types/request": "^2.48.1",
+    "app-root-path": "^2.2.1",
+    "express": "^4.17.1",
+    "request": "^2.88.0",
+    "typescript": "^3.5.2"
+  }
+}

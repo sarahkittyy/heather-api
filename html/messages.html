@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>All heather messages</title>
+	</head>
+	<body>
+		<p id="messages"></p>
+		<script>
+		var req = new XMLHttpRequest();
+		req.open('get', '/api/heather/messages/all');
+		req.send();
+		req.onreadystatechange = function() {
+			if(req.readyState == 4 && req.status == 200)
+			{
+				var text = JSON.parse(req.responseText);
+				var p = document.querySelector('#messages').innerHTML = text.map(s => '- ' + s).join('<br />');
+			}
+		}
+		</script>
+	</body>
+</html>
